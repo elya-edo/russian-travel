@@ -105,6 +105,49 @@
 
 }
 
+.intro {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 92px 148px 92px 148px;
+}
+
+.intro__container {
+  max-width: 690px;
+}
+
+.intro__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+  color: #FFFFFF;
+}
+
+.intro__text {
+  margin: 40px 0 33px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #FFFFFF;
+}
+
+.intro__list {
+  padding-inline-start: 0; /*убираю сдвиг в <ul> */
+  list-style: none;        /*убираю маркер у списка <ul> */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.intro__quantity {
+  font-weight: 400;
+}
+
 
 @media screen and (max-width: 1279px) { /*макет 1024*/
   .header {
@@ -122,6 +165,24 @@
   .lead__subtitle {
     margin-bottom: 56px;
   }
+
+  .intro {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 928px;
+  }
+
+  .intro__title {
+  }
+
+  .intro__text {
+  }
+
+  .intro__list {
+  }
+
+  .intro__quantity {
+  }
 }
 
 @media screen and (max-width: 1023px) { /*макет 768*/
@@ -132,6 +193,27 @@
 
   .lead {
     width: 100%;
+  }
+
+  .intro {
+    padding: 88px 0 88px 0;
+  }
+
+  .intro__container {
+    max-width: 720px;
+    margin-left: 24px;
+  }
+
+  .intro__title {
+  }
+
+  .intro__text {
+  }
+
+  .intro__list {
+  }
+
+  .intro__quantity {
   }
 }
 
@@ -172,6 +254,29 @@
     margin-right: 16px;
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  .intro {
+    padding: 64px 16px 64px 16px;
+  }
+
+  .intro__container {
+    margin-left: 0;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .intro__text {
+    margin-bottom: 33px;
+  }
+
+  .intro__list {
+  }
+
+  .intro__quantity {
   }
 }
 
