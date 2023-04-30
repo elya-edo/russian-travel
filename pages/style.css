@@ -148,8 +148,24 @@
   font-weight: 400;
 }
 
+.photo-grid {                            /*макет 1280 - комп */
+  margin: 0 auto;/*
+  max-width: 1280px;
+  padding-left: 48px;
+  padding-right: 48px;*/
+  max-width: 1184px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
 
-@media screen and (max-width: 1279px) { /*макет 1024*/
+.photo-grid__item {
+  width: 100%;
+}
+/*макет 1280 - комп */
+
+
+@media screen and (max-width: 1279px) { /*макет 1024 - небольш ноут */
   .header {
     padding-left: 48px;
     padding-right: 48px;
@@ -172,20 +188,15 @@
     max-width: 928px;
   }
 
-  .intro__title {
+  .photo-grid {
+    width: calc(100% - 96px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
   }
+} /*макет 1024 - небольш ноут */
 
-  .intro__text {
-  }
 
-  .intro__list {
-  }
-
-  .intro__quantity {
-  }
-}
-
-@media screen and (max-width: 1023px) { /*макет 768*/
+@media screen and (max-width: 1023px) { /*макет 768 - планшет*/
   .header {
     padding-left: 24px;
     padding-right: 24px;
@@ -204,20 +215,15 @@
     margin-left: 24px;
   }
 
-  .intro__title {
+  .photo-grid {
+    width: calc(100% - 48px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
+} /*макет 768 - планшет*/
 
-  .intro__text {
-  }
 
-  .intro__list {
-  }
-
-  .intro__quantity {
-  }
-}
-
-@media screen and (max-width: 767px) { /*макет 320*/
+@media screen and (max-width: 767px) { /*макет 320 - мобильная */
   .header {
     padding-left: 16px;
     padding-right: 16px;
@@ -269,58 +275,9 @@
     line-height: 1.09;
   }
 
-  .intro__text {
-    margin-bottom: 33px;
-  }
-
-  .intro__list {
-  }
-
-  .intro__quantity {
-  }
+.photo-grid {
+  width: calc(100% - 32px);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
 }
-
-
-
-
-
-/*
-@media screen and (max-width: 1023px) {
-  .page__section {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .page__section {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-.page__section_xl_narrow {
-  max-width: 1080px;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .page__section_lg_wide {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .page__section_md_wide {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .page__section_sm_wide {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-*/
+} /*макет 320 - мобильная */
