@@ -1,29 +1,25 @@
-.cover__container {
+.cover {
   margin: 0 auto;
   max-width: 1184px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
-  min-height: 62.5vw;
+  min-height: 740px;
   background-image: linear-gradient(0deg, rgba(42, 44, 47, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../../images/cover-trains.jpg');
+    url('../../images/cover-trains.jpg');
   background-size: cover;
+  background-position: center;
+  object-fit: cover;
 }
 
-.cover__container:hover {
+.cover:hover {
   background-image: linear-gradient(0deg, rgba(42, 44, 47, 0.8), rgba(0, 0, 0, 0.8)),
-    url('../../../images/cover-trains.jpg');
+    url('../../images/cover-trains.jpg');
 }
 
 @media screen and (max-width: 1279px) {
-  .cover__container {
+  .cover {
+    min-height: 62.5vw;
     width: 100%;
   }
 }   /*макет 1024 - небольш ноут */
-
-@media screen and (max-width: 767px) {
-  .cover__container {
-    gap: 16px;
-  }
-}   /*макет 320 - мобильная */

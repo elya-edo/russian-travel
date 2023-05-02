@@ -1,6 +1,4 @@
 .intro__list {
-  padding-inline-start: 0; /*убираю сдвиг в <ul> */
-  list-style: none;        /*убираю маркер у списка <ul> */
   font-style: normal;
   font-weight: 700;
   font-size: 12px;

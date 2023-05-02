@@ -9,7 +9,6 @@
 
 @media screen and (max-width: 767px) {
   .footer__author {
-    font-size: 14px;
     line-height: 1;
   }
 }   /*макет 320 - мобильная */
