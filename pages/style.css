@@ -1,8 +1,15 @@
 @import url('../vendor/normalize.css');
+@import url('../vendor/fonts/fonts.css');
 
 .page {
   background-color: #2A2C2F;
   font-family: 'Inter', Arial, sans-serif;
+  /*сглаживание шрифтов*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   /*Подгонка размера текста, чтобы при изменении масштаба страницы размер шрифта изменялся пропорционально.*/-webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
 }
 
 .header {
@@ -258,10 +265,6 @@
   padding: 92px 0 24px 0;
   display: flex;
   justify-content: space-between;
-}
-
-.footer__links {
-
 }
 
 .footer__link{
