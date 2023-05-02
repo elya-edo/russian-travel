@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 32px;
-  min-height: 740px;
+  min-height: 62.5vw;
   background-image: linear-gradient(0deg, rgba(42, 44, 47, 0.3), rgba(0, 0, 0, 0.3)),
     url('../../../images/cover-trains.jpg');
   background-size: cover;
@@ -19,19 +19,11 @@
 @media screen and (max-width: 1279px) {
   .cover__container {
     width: 100%;
-    min-height: 640px;
   }
 }   /*макет 1024 - небольш ноут */
 
-@media screen and (max-width: 1023px) {
-  .cover__container {
-    min-height: 480px;
-  }
-}   /*макет 768 - планшет*/
-
 @media screen and (max-width: 767px) {
   .cover__container {
-    min-height: 200px;
     gap: 16px;
   }
 }   /*макет 320 - мобильная */

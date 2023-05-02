@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 1279px) {
   .places__place {
-    grid-template-columns: 440px minmax(456px, 1fr);
+    grid-template-columns: minmax(440px, 1fr) minmax(456px, 1fr);
     gap: 48px 32px;
   }
 }   /*макет 1024 - небольш ноут */
@@ -20,7 +20,7 @@
 @media screen and (max-width: 1023px) {
   .places__place {
     margin-bottom: 73px;
-    grid-template-columns: 340px minmax(352px, 1fr);
+    grid-template-columns: minmax(340px, 1fr) minmax(352px, 1fr);
     gap: 48px 28px;
   }
 }   /*макет 768 - планшет*/
