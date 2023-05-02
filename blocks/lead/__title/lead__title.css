@@ -1,0 +1,20 @@
+.lead__title {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 720px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1.04;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .lead__title {
+    margin-bottom: 16px;
+    width: calc(100% - 32px);
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}   /*макет 320 - мобильная */

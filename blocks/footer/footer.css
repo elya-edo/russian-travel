@@ -1,0 +1,28 @@
+.footer {
+  margin: 0 auto;
+  max-width: 1184px;
+  padding: 92px 0 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer {
+    width: calc(100% - 96px);
+  }
+}   /*макет 1024 - небольш ноут */
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    padding: 88px 0 24px 0;
+    width: calc(100% - 48px);
+  }
+}   /*макет 768 - планшет*/
+
+@media screen and (max-width: 767px) {
+  .footer {
+    width: calc(100% - 32px);
+    padding: 64px 0 24px 0;
+    display: block;
+  }
+}   /*макет 320 - мобильная */

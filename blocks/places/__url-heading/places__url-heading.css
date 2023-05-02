@@ -1,0 +1,15 @@
+.places__url-heading {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: #AAAAAA;
+}
+
+@media screen and (max-width: 767px) {
+  .places__url-heading {
+    margin: 0 0 12px;
+  }
+}   /*макет 320 - мобильная */

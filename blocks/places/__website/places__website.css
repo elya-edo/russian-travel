@@ -1,0 +1,13 @@
+.places__website {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .places__website {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    display: block;
+  }
+}   /*макет 320 - мобильная */

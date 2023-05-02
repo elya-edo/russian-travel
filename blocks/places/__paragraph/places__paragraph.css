@@ -1,0 +1,26 @@
+.places__paragraph {
+  margin: 0 0 26px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.63;
+  color: #FFFFFF;
+}
+
+.places__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .places__paragraph {
+    margin: 0 0 25px;
+    font-size: 16px;
+  }
+}   /*макет 768 - планшет*/
+
+@media screen and (max-width: 767px) {
+  .places__paragraph {
+    width: calc(100% - 32px);
+    margin: 0 auto 25px;
+  }
+}   /*макет 320 - мобильная */
