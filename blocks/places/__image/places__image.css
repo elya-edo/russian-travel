@@ -1,22 +1,3 @@
 .places__image {
-  max-width: 460px;
+  width: 100%;
 }
-
-@media screen and (max-width: 1279px) {
-  .places__image {
-    width: 100%;
-  }
-}   /*макет 1024 - небольш ноут */
-
-@media screen and (max-width: 1023px) {
-  .places__image {
-    width: 100%;
-  }
-}   /*макет 768 - планшет*/
-
-@media screen and (max-width: 767px) {
-  .places__image {
-    max-width: 767px;
-    width: 100%;
-  }
-}   /*макет 320 - мобильная */
